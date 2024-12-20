@@ -1,0 +1,210 @@
+/* Tema Manis-Manis dengan Animasi Lembut */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe6e6, #ffe8f1);
+    color: #444;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffccd5, #ffc2e0);
+    color: #ffffff;
+    border-bottom: 2px solid #ffb3c6;
+    box-shadow: 0 4px 8px rgba(255, 179, 198, 0.5);
+}
+
+header h1 {
+    font-size: 2.8em;
+    text-shadow: 0 3px 6px rgba(255, 102, 153, 0.5);
+}
+
+header p {
+    font-size: 1.3em;
+    color: #ffedf3;
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    background: #ff99b9;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 153, 185, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 102, 153, 0.6);
+}
+
+.search-filter {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 2px solid #ffb3c6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 10px;
+    margin: 0 5px;
+    border: 2px solid #ffb3c6;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #ffe6e6;
+    color: #444;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-filter input:focus,
+.search-filter select:focus {
+    box-shadow: 0 4px 8px rgba(255, 153, 185, 0.5);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.item-produk {
+    background: #fff;
+    padding: 20px;
+    margin: 15px;
+    border: 2px solid #ffb3c6;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(255, 153, 185, 0.4);
+}
+
+.item-produk:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(255, 102, 153, 0.6);
+}
+
+.item-produk img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.item-produk img:hover {
+    transform: scale(1.05);
+}
+
+.item-produk h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #ff6699;
+}
+
+.item-produk p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.item-produk button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background: #ff99b9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 153, 185, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-produk button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 102, 153, 0.6);
+}
+
+aside#keranjangBelanja {
+    padding: 20px;
+    margin: 20px;
+    background: #ffe6e6;
+    color: #444;
+    border: 2px solid #ffb3c6;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 179, 198, 0.5);
+    flex: 1;
+}
+
+aside h2 {
+    font-size: 2em;
+    color: #ff6699;
+    margin-bottom: 15px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 179, 198, 0.4);
+}
+
+aside button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #ff99b9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 153, 185, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+aside button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 102, 153, 0.6);
+}
+
+.toast {
+    background: #ff6699;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(255, 102, 153, 0.5);
+    display: none;
+    z-index: 1000;
+    animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
